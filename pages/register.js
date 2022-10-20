@@ -28,12 +28,12 @@ export default function LoginScreen() {
   const submitHandler = async ({ name, email, password }) => {
     try {
       await axios.post('/api/auth/signup', {
+        name,
         email,
         password,
       });
       const result = await signIn('credentials', {
         redirect: false,
-        name,
         email,
         password,
       });
