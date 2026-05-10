@@ -2,7 +2,7 @@
   "name": "next-tailwind-amazona",
   "version": "0.1.0",
   "private": true,
-   "engines": {
+  "engines": {
     "node": "20.x"
   },
   "scripts": {
@@ -15,6 +15,7 @@
     "@headlessui/react": "^1.6.6",
     "@heroicons/react": "^1.0.6",
     "@paypal/react-paypal-js": "^7.8.1",
+    "@vercel/speed-insights": "^2.0.0",
     "axios": "^0.27.2",
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.0.1",
