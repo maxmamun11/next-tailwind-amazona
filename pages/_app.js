@@ -3,6 +3,7 @@ import { StoreProvider } from '../utils/Store';
 import { SessionProvider, useSession } from 'next-auth/react';
 import { useRouter } from 'next/router';
 import { PayPalScriptProvider } from '@paypal/react-paypal-js';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
           ) : (
             <Component {...pageProps} />
           )}
+          <SpeedInsights />
         </PayPalScriptProvider>
       </StoreProvider>
     </SessionProvider>
